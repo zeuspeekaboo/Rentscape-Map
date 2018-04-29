@@ -135,7 +135,7 @@ p.draw = function() {
     rot++;
   
     p.texture(img);
-    p.plane(img.height,img.width);
+    p.plane(img.width,img.height);
     
     //sphere(20); 
   
@@ -144,20 +144,27 @@ p.draw = function() {
 
         var f = rent[j];
         var e = elevation[j];
+        var l = elevation[j];
         var i = income[j];
+        var o = income[j];
         var s = rent[j];
-        s = p.map(s, 0, 8000, 0, p.max(elevation));
-        i = p.map(i, 200, 12100, 0, p.max(elevation));
-        f = p.map(f, 0, 8000, 0, 255);
-        e = p.map(e, -12, 925, 0, 255);
-        s = p.map(s, -12, p.max(elevation), 0, p.width);
-        f = p.map(f, -12, p.max(elevation), 0, p.height);
-        p.ambientMaterial(255,0,200);
+        //s = p.map(s, p.min(rent), p.max(rent), 0, 3000);
+        //i = p.map(i, p.min(income), p.max(income), 0, 3000);
+        
+        var v = cha[j];
+        v = p.map(v, p.min(cha), p.max(cha),-40 ,400);
+        e = p.map(e, p.min(elevation), p.max(elevation), 0, 250);
+        f = p.map(f, p.min(rent), p.max(rent), 0, 255);
+        l = p.map(l, p.min(elevation), p.max(elevation), 0, 255);
+        o = p.map(o, p.min(income), p.max(income), 0, 255);
+        //s = p.map(s, -12, p.max(elevation), 0, p.width);
+        //f = p.map(f, -12, p.max(elevation), 0, p.height);
+        p.ambientMaterial(l,f,o);
         p.noStroke();
         p.push();
-        p.translate(locationX[j]-img.height/2,locationY[j]-img.width/2,0);
+        p.translate(locationX[j]-img.width/2,locationY[j]-img.height/2,e);
         p.rotateX(p.radians(90));
-        p.cone(10,i-s);
+        p.cone(10,v);
         //translate(0,0,-e/2);
         //box(5,5,e);
         p.pop();
