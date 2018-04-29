@@ -6,12 +6,14 @@ var counter = 0;
 var submit;
 var rm = true;
 var ic;
+var minus;
 
-var rent = [0, 1300, 2550, 3100, 2950, 3400, 3650, 6000, 8000];
-var income = [200,1500,2130,4500,3400,5200,6150,9100,12100];
-var elevation = [-12, 0, 20, 30, 80, 140, 270, 475, 925];
-var locationX = [0,300,122,89,247,18,264,159,191];
-var locationY = [0,49,151,178,249,207,285,92,37];
+var rent = [0];
+var income = [0];
+var elevation = [0];
+var locationX = [0];
+var locationY = [0];
+var cha = [0];
 var inputRent;
 var inputEle;
 var inputInc;
@@ -100,6 +102,10 @@ p.inputRe = function(){
   p.append(income, ic.value());
     	console.log(allData.length);
   console.log(allData[0]);
+  minus = ic.value() - rt.value();
+        console.log(minus);
+        p.append(cha,minus);
+        console.log(cha);
     counter = 0;
         rm = false;
 }
