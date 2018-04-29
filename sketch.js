@@ -1,3 +1,5 @@
+//coded by Zeus
+
 var allData = [];
 var img;
 var rt;
