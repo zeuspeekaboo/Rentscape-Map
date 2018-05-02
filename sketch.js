@@ -120,7 +120,7 @@ p.preload = function(){
   img = p.loadImage('san francisco map.jpg');
 }
 p.setup = function() {
-    p.createCanvas(500,500, p.WEBGL);  
+    p.createCanvas(2000,2000, p.WEBGL);  
   
 }
 
@@ -136,7 +136,7 @@ p.draw = function() {
     
         
     var camheight = p.mouseX*0.5;
-    p.camera(p.width / 2, 1000, camheight*2, p.width / 2, p.height / 2, 0, 0, 1, 0);
+    p.camera(p.width / 2, 1000, camheight/2, p.width / 2, p.height / 2, 0, 0, 1, 0);
     //pointLight(255, 255, 255, 0, 50, 10000);
     //pointLight(200, 0, 150, 0, 2000, 1000);
 		p.rotateZ(p.radians(rot)/10);
