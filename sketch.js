@@ -49,7 +49,7 @@ p.Data = function(x,y,r,e,c) {
 }
 
 p.mousePressed = function(){
-  if(counter == 0 && rm == true){
+  if(counter == 0 && rm == true && p.mouseX < 2400 && p.mouseY <1870){
 	rt = p.createInput('Rent');
   rt.mouseClicked(p.clr);
   rt.position(p.mouseX,p.mouseY);
