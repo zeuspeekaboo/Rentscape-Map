@@ -162,9 +162,9 @@ p.draw = function() {
         
         var v = cha[j];
 	    if( v =! 0){
-        v = 0;
+        v = p.map(v, p.min(cha), p.max(cha),-40 ,400);
 	    }else{
-	v = p.map(v, p.min(cha), p.max(cha),-40 ,400);	
+	v = 0;	
 	    }
         e = p.map(e, p.min(elevation), p.max(elevation), 0, 250);
         f = p.map(f, p.min(rent), p.max(rent), 0, 255);
