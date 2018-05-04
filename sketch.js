@@ -144,6 +144,7 @@ p.draw = function() {
   
     p.texture(img);
     p.plane(img.width,img.height);
+    p.translate(p.width/2-p.mouseX);
     
     //sphere(20); 
   
