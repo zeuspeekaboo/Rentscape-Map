@@ -136,7 +136,7 @@ p.draw = function() {
     
         
     var camheight = p.mouseX*0.5;
-    p.camera(p.width/2, 2500, camheight*6, p.height/2, 0, 0, 0, 1, 0);
+    p.camera(p.width/2, 2500, camheight*4, p.height/2, 0, 0, 0, 1, 0);
     //pointLight(255, 255, 255, 0, 50, 10000);
     //pointLight(200, 0, 150, 0, 2000, 1000);
 		p.rotateZ(p.radians(rot)/10);
@@ -160,12 +160,7 @@ p.draw = function() {
         //s = p.map(s, p.min(rent), p.max(rent), 0, 3000);
         //i = p.map(i, p.min(income), p.max(income), 0, 3000);
         
-        var v = cha[j];
-	    if( v =! 0){
-        v = p.map(v, p.min(cha), p.max(cha),-40 ,400);
-	    }else{
-	v = 0;	
-	    }
+     
         e = p.map(e, p.min(elevation), p.max(elevation), 0, 250);
         f = p.map(f, p.min(rent), p.max(rent), 0, 255);
         l = p.map(l, p.min(elevation), p.max(elevation), 0, 255);
@@ -177,7 +172,7 @@ p.draw = function() {
         p.push();
         p.translate(locationX[j]-img.width/2,locationY[j]-img.height/2,e);
         p.rotateX(p.radians(90));
-        p.cone(10,v);
+        p.cone(10,cha[j]/5);
         //translate(0,0,-e/2);
         //box(5,5,e);
         p.pop();
