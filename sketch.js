@@ -161,7 +161,11 @@ p.draw = function() {
         //i = p.map(i, p.min(income), p.max(income), 0, 3000);
         
         var v = cha[j];
-        v = p.map(v, p.min(cha), p.max(cha),-40 ,400);
+	    if( v =! 0){
+        v = 0;
+	    }else{
+	v = p.map(v, p.min(cha), p.max(cha),-40 ,400);	
+	    }
         e = p.map(e, p.min(elevation), p.max(elevation), 0, 250);
         f = p.map(f, p.min(rent), p.max(rent), 0, 255);
         l = p.map(l, p.min(elevation), p.max(elevation), 0, 255);
