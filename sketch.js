@@ -102,6 +102,7 @@ p.inputRe = function(){
     data.e = parseInt(ele.value());
     data.c = parseInt(ic.value());
 	}else{
+		p.alert（'please input a value');
 		data.r = 0;
 		data.e = 0;
 		data.c = 0;
