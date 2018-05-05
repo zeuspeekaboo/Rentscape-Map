@@ -62,7 +62,7 @@ p.mousePressed = function(){
   p.submit = p.createButton('submit');
   p.submit.position(p.mouseX,p.mouseY+150);
     counter = 1;
-	  if(rt.value =! Nah && ic.value =! Nah && ele.value =! Nah){
+	  if(rt.value =! null && ic.value =! null && ele.value =! null){
   p.submit.mousePressed (p.inputRe);
   
     
