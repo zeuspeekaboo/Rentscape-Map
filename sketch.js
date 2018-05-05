@@ -97,7 +97,7 @@ p.clr3 = function(){
 
 p.inputRe = function(){
     var data = allData[0];
-	if(rt.value()=!"" && ele.value()=!"" && ic.value()=!""){
+	if(rt.value()!="" && ele.value()!="" && ic.value()!=""){
     data.r = parseInt(rt.value());
     data.e = parseInt(ele.value());
     data.c = parseInt(ic.value());
