@@ -62,6 +62,7 @@ p.mousePressed = function(){
   p.submit = p.createButton('submit');
   p.submit.position(p.mouseX,p.mouseY+150);
     counter = 1;
+	  if(rt.value =! Nah && ic.value =! Nah && ele.value =! Nah){
   p.submit.mousePressed (p.inputRe);
   
     
@@ -73,7 +74,7 @@ p.mousePressed = function(){
 	console.log(allData.length);
   console.log(allData[allData.length-1]);
       }
-  
+  }
   if (rm==false) {
     
     rt.remove();
@@ -136,7 +137,7 @@ p.draw = function() {
     
         
     var camheight = p.mouseX*0.5;
-    p.camera(p.width/2, 2500, camheight*4, p.height/2, 0, 0, 0, 1, 0);
+    p.camera(p.width/2+p.mouseX*2, 2500, camheight*4, p.height/2, 0, 0, 0, 1, 0);
     //pointLight(255, 255, 255, 0, 50, 10000);
     //pointLight(200, 0, 150, 0, 2000, 1000);
 		p.rotateZ(p.radians(rot)/10);
