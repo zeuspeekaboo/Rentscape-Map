@@ -112,9 +112,7 @@ p.inputRe = function(){
   p.append(elevation, 0);
   p.append(income, 0);
 	}
-  p.append(rent, rt.value());
-  p.append(elevation, ele.value());
-  p.append(income, ic.value());
+
     	console.log(allData.length);
   console.log(allData[0]);
   minus = ic.value() - rt.value();
