@@ -62,18 +62,18 @@ p.mousePressed = function(){
   p.submit = p.createButton('submit');
   p.submit.position(p.mouseX,p.mouseY+150);
     counter = 1;
-	  if(rt.value =! null && ic.value =! null && ele.value =! null){
+	 
   p.submit.mousePressed (p.inputRe);
   
     
-	p.append(allData, new p.Data(p.mouseX,p.mouseY,rt.value(),ele.value(),ic.value()));
+	p.append(allData, new p.Data(p.mouseX,p.mouseY, 0, 0, 0));
   p.append(locationX, p.mouseX);
   p.append(locationY, p.mouseY);
   //Data.r = inputRent;
   //Data.e = inputEle;
 	console.log(allData.length);
   console.log(allData[allData.length-1]);
-      }
+     
   }
   if (rm==false) {
     
