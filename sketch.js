@@ -97,7 +97,7 @@ p.clr3 = function(){
 
 p.inputRe = function(){
     var data = allData[0];
-	if(rt.value()!="" && ele.value()!="" && ic.value()!=""){
+	if(rt.value()!='' && ele.value()!='' && ic.value()!=''){
     data.r = parseInt(rt.value());
     data.e = parseInt(ele.value());
     data.c = parseInt(ic.value());
@@ -143,7 +143,7 @@ p.draw = function() {
     
         
     var camheight = p.mouseX*0.5;
-    p.camera(p.width/2-p.mouseX*2, 2500, camheight*4, p.height/2, 0, 0, 0, 1, 0);
+    p.camera(p.width/2, 2500, camheight*4, p.height/2, 0, 0, 0, 1, 0);
     //pointLight(255, 255, 255, 0, 50, 10000);
     //pointLight(200, 0, 150, 0, 2000, 1000);
 		p.rotateZ(p.radians(rot)/10);
