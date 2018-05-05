@@ -101,11 +101,16 @@ p.inputRe = function(){
     data.r = parseInt(rt.value());
     data.e = parseInt(ele.value());
     data.c = parseInt(ic.value());
+  p.append(rent, rt.value());
+  p.append(elevation, ele.value());
+  p.append(income, ic.value());
 	}else{
-		p.alert（'please input a value');
 		data.r = 0;
 		data.e = 0;
 		data.c = 0;
+  p.append(rent, 0);
+  p.append(elevation, 0);
+  p.append(income, 0);
 	}
   p.append(rent, rt.value());
   p.append(elevation, ele.value());
