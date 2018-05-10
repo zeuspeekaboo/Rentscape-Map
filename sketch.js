@@ -97,21 +97,21 @@ p.clr3 = function(){
 
 p.inputRe = function(){
     var data = allData[0];
-	if(rt.value()==='null' || rt.value() = ''){
+	if(rt.value()='null' || rt.value() = ''){
 		data.r = 0;
 		p.append(rent, 0);
 	}else{
 		   data.r = parseInt(rt.value());
                    p.append(rent, rt.value());
 	}
-        if(ele.value()==='null' || ele.value() = ''){
+        if(ele.value()='null' || ele.value() = ''){
 		data.r = 0;
 		p.append(elevation, 0);
 	}else{
 		   data.r = parseInt(ele.value());
                    p.append(elevation, ele.value());
 	}
-	if(ic.value()=== 'null' || ic.value() = ''){
+	if(ic.value()= 'null' || ic.value() = ''){
 		data.r = 0;
 		p.append(income, 0);
 	}else{
