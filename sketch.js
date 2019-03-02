@@ -138,7 +138,7 @@ p.preload = function(){
   img = p.loadImage('san francisco map.jpg');
 }
 p.setup = function() {
-    p.createCanvas(2100,1870, p.WEBGL);  
+    p.createCanvas(3201,2840, p.WEBGL);  
   
 }
 
