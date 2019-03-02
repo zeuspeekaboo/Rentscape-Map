@@ -25,8 +25,8 @@ var rot = 0;
 
 var s = function(p) {
   p.setup = function() {
-  p.createCanvas(3201, 2840);
-  img = p.loadImage('san francisco map.jpg');
+  p.createCanvas(1600, 1420);
+  img = p.loadImage('san francisco map.png');
   inputRent = p.select("#rent");
   inputEle = p.select("#elevation");
   inputIc = p.select("#income");
@@ -138,7 +138,7 @@ p.preload = function(){
   img = p.loadImage('san francisco map.jpg');
 }
 p.setup = function() {
-    p.createCanvas(3201,2840, p.WEBGL);  
+    p.createCanvas(1600,1420, p.WEBGL);  
   
 }
 
