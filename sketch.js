@@ -25,7 +25,7 @@ var rot = 0;
 
 var s = function(p) {
   p.setup = function() {
-  p.createCanvas(2400, 1870);
+  p.createCanvas(3201, 2840);
   img = p.loadImage('san francisco map.jpg');
   inputRent = p.select("#rent");
   inputEle = p.select("#elevation");
