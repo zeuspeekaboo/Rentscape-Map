@@ -135,7 +135,7 @@ var myp5 = new p5(s,'c1');
 
 var t = function(p) {
 p.preload = function(){
-  img = p.loadImage('san francisco map.jpg');
+  img = p.loadImage('san francisco map.png');
 }
 p.setup = function() {
     p.createCanvas(1600,1420, p.WEBGL);  
